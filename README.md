@@ -58,6 +58,11 @@ Banyak faktor yang mempengaruhi berapa banyak biaya asuransi kesehatan yang haru
 * region: Wilayah penerima di AS, *northeast*, *southeast*, *southwest*, *northwest*.
 * charges: Biaya medis individu yang ditagih oleh asuransi kesehatan.
 
+Dilakukan Exploratory Data Analysis (EDA) untuk mendapatkan sebuah insight sekaligus untuk menjawab salah satu `Goals` yang ingin dicapai, dimana untuk mengetahui faktor-faktor apa saja yang mempengaruhi biaya asuransi. Adapun tahapan yang dilakukan, yaitu:
+* Analisis Deskriptif
+* Visualisasi Data ( Univariate dan Multivariate Analysis)
+* `Feature importance ranking` dari Random Forest untuk validasi faktor atau fitur penting terdahap biaya asuransi.
+
 ## Data Preparation
 Teknik yang digunakan pada tahapan ini, yaitu:
 1. LabelEncoder()
