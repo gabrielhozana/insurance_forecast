@@ -85,16 +85,20 @@ Algoritma yang digunakan, yaitu:
 * Polynomial Regression
 * Random Forest
 
+**Metrik**
+
 Hasil dari ketiga model, dapat dilihat dibawah ini:
+
 Model | MSE | RMSE | R^2 
 ------ | ------ | ------|--------
-| 0 | Linear Regression |	3.184593e+07 	5643.219749 | 0.799875 |
-| 1 | Polynomial Regression |	1.888866e+07 	4346.108309 | 0.881300|
-|2 | Random Forest | 1.718343e+07 	4145.289931 | 0.892016 |
+0 | Linear Regression |	3.184593e+07 	5643.219749 | 0.799875 
+1 | Polynomial Regression |	1.888866e+07 	4346.108309 | 0.881300
+2 | Random Forest | 1.718343e+07 	4145.289931 | 0.892016
 
 Dapat dilihat bahwa model Random Forest menghasilkan nilai R2 tertinggi dan juga menghasilkan nilai MSE maupun nilai RMSE yang rendah. 
 
-Hasil prediksi:
+**Hasil Prediksi**
+
 Actual | Predicted Polynomial |	Predicted Random Forest |	Predicted Linear Regression
 ---|---|---|---
 9724.53000 | 11892.0 |	12530.809502 |	11017.230479
