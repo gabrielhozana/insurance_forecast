@@ -47,16 +47,22 @@ Memiliki asuransi kesehatan membuat kita tidak perlu terlalu mengkhawatirkan mas
     * ketika digunakan untuk regresi, mereka tidak dapat memprediksi di luar kisaran dalam data percobaan, hal ini di mungkinkan data terlalu cocok dengan kumpulan data pengganggu (noisy).
 
 ## **Data Understanding**
-Banyak faktor yang mempengaruhi berapa banyak biaya asuransi kesehatan yang harus dibayar. Ada baiknya untuk memiliki pemahaman terkait faktor-faktor tersebut. Berikut adalah beberapa faktor yang mempengaruhi berapa biaya premi asuransi kesehatan:
-[Medical Cost Personal Datasets](https://www.kaggle.com/mirichoi0218/insurance)
+Dataset yang digunakan adalah [Medical Cost Personal Datasets](https://www.kaggle.com/mirichoi0218/insurance) yang dimana terdapat beberapa fitur atau variabel yang mempengaruhi berapa banyak biaya asuransi kesehatan yang harus dibayar. 
 
-* age: Usia penerima. 
-* sex: *Gender* penerima asuransi, *female*, *male*.
-* bmi (*Body Mass Index*): Memberikan pemahaman tentang tubuh, berat badan yang relatif tinggi atau relatif rendah terhadap tinggi badan.  Indeks objektif berat badan (kg/m^2) menggunakan rasio tinggi terhadap berat badan, idealnya 18,5 hingga 24,9.
-* children: Jumlah anak yang ditanggung oleh asuransi kesehatan atau jumlah tanggungan.
-* smoker: Perokok atau bukan perokok.
-* region: Wilayah penerima di AS, *northeast*, *southeast*, *southwest*, *northwest*.
-* charges: Biaya medis individu yang ditagih oleh asuransi kesehatan.
+Dataset terdiri dari **1338** sampel tanpa missing value (Nan, Null) dengan fitur sebagai berikut:
+
+* age: Usia penerima (int64). 
+* sex: *Gender* penerima asuransi, *female*, *male* (object).
+* bmi (*Body Mass Index*): Memberikan pemahaman tentang tubuh, berat badan yang relatif tinggi atau relatif rendah terhadap tinggi badan.  Indeks objektif berat badan (kg/m^2) menggunakan rasio tinggi terhadap berat badan, idealnya 18,5 hingga 24,9 (float64).
+* children: Jumlah anak yang ditanggung oleh asuransi kesehatan atau jumlah tanggungan (int64).
+* smoker: Perokok atau bukan perokok (object).
+* region: Wilayah penerima di AS, *northeast*, *southeast*, *southwest*, *northwest* (object).
+* charges: Biaya medis individu yang ditagih oleh asuransi kesehatan (float64).
+
+Terdiri dari tipe data: 
+* float64 sebanyak 2 fitur 
+* int64 sebanyak 2 fitur 
+* object sebanyak 3 fitur
 
 Dilakukan Exploratory Data Analysis (EDA) untuk mendapatkan sebuah insight sekaligus untuk menjawab salah satu `Goals` yang ingin dicapai, dimana untuk mengetahui faktor-faktor apa saja yang mempengaruhi biaya asuransi. Adapun tahapan yang dilakukan, yaitu:
 * Analisis Deskriptif
