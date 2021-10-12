@@ -66,8 +66,25 @@ Terdiri dari tipe data:
 
 Dilakukan Exploratory Data Analysis (EDA) untuk mendapatkan sebuah insight sekaligus untuk menjawab salah satu `Goals` yang ingin dicapai, dimana untuk mengetahui faktor-faktor apa saja yang mempengaruhi biaya asuransi. Adapun tahapan yang dilakukan, yaitu:
 * Analisis Deskriptif
+
 * Visualisasi Data ( Univariate dan Multivariate Analysis)
-* `Feature importance ranking` dari Random Forest untuk validasi faktor atau fitur penting terdahap biaya asuransi.
+
+**Visualisasi Univariate**
+
+Dari hasil visualisasi data univariate, didapatkan kesimpulan:
+1. Jika dilihat hasil visualisasi dari jenis kelamin pada dataset, jumlah sample dari laki-laki dan perempuan hampir sama.
+2. Jika dilihat dari hasil visualisasi, jumlah yang tidak merokok lebih banyak dibandingkan dengan jumlah perokok.
+3. Jadi secara keseluruhan biaya asuransi tertinggi ada di region Southeast dan terendah di region Southwest.
+4. Jika dilihat pada fitur `charges` atau lebih tepatnya label atau target, datanya distribusi condong kekanan (right-skewed).
+
+**Visualisasi Multivariate**
+
+1. Dapat diperhatikan fitur-fitur yang terdapat pada dataset yang digunakan terhadap target `charges` tidak memiliki hubungan linier. 
+2. Jika dilihat 
+   * Faktor pada fitur sex tidak berpengaruh jauh.
+   * Faktor perokok berpengaruh terhadap biaya.
+   * Region southeast dengan charges yang dibayar tinggi.
+   * `Feature importance ranking` dari Random Forest untuk validasi faktor atau fitur penting terdahap biaya asuransi.
 
 ## Data Preparation
 Teknik yang digunakan pada tahapan ini, yaitu:
