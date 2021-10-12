@@ -68,6 +68,22 @@ Dilakukan Exploratory Data Analysis (EDA) untuk mendapatkan sebuah insight sekal
 
 **A. Analisis Deskriptif**
 
+|  | age | 	bmi| 	children| 	charges
+---|---|---|---|---
+count | 	1338.000000 |	1338.000000 |	1338.000000 |	1338.000000
+mean |	39.207025 |	30.663397 |	1.094918 |	13270.422265
+std |	14.049960 |	6.098187 | 1.205493 |	12110.011237
+min |	18.000000 |	15.960000 |	0.000000 |	1121.873900
+25% |	27.000000 |	26.296250 |	0.000000 |	4740.287150
+50% | 39.000000 |	30.400000 |	1.000000 |	9382.033000
+75% | 51.000000 |	34.693750 |	2.000000 |	16639.912515
+max | 64.000000 |	53.130000 |	5.000000 |	63770.428010
+
+Didapatkan beberapa hasil berupa:
+* Banyaknya sample 1338.
+* Rata-rata umur 39, memiliki bmi 30, jumlah anak 1 dan biaya 13270 yang harus dibayarkan. 
+* Tertua dengan umur 64 tahun dan termuda ada 18 tahun.
+
 **B. Visualisasi Data ( Univariate dan Multivariate Analysis)**
 
 **Visualisasi Univariate**
@@ -89,6 +105,16 @@ Dari hasil visualisasi data univariate, didapatkan kesimpulan:
 4. [Gambar 6](/photo/6.png) analisa biaya pengobatan menurut age, bmi dan children menurut faktor smoker. Didapatkan Merokok memiliki dampak tertinggi pada biaya medis, meskipun biayanya meningkat seiring bertambahnya usia, bmi, dan jumlah anak-anak.
 
 **C. `Feature importance ranking`** dari Random Forest untuk validasi faktor atau fitur penting terdahap biaya asuransi.
+
+Jika dilihat dari hasil visualisasi [Gambar 7](/photo/7.png), maka dapat ditarik sebuah kesimpulan bahwa fitur yang mempengaruhi biaya asuransi adalah `smoker, bmi dan age`. Selain dari fitur yang disebutkan, sangat kecil kemungkinan dalam mempengaruhi biaya asuransi yang harus dibayarkan.
+
+Adapun Feature importance ranking yang didapatkan.
+1. smoker(0.617901)
+2. bmi(0.210965)
+3. age(0.134188)
+4. children(0.019162)
+5. region(0.012888)
+6. sex(0.004896)
 
 ## Data Preparation
 Teknik yang digunakan pada tahapan ini, yaitu:
