@@ -118,9 +118,8 @@ Adapun Feature importance ranking yang didapatkan.
 
 ## Data Preparation
 Teknik yang digunakan pada tahapan ini, yaitu:
-1. LabelEncoder()
-Label encoding mengubah setiap nilai dalam kolom menjadi angka yang berurutan.
-Jika ambil sebuah contoh pada fitur `sex` nilai female = 0 dan male = 1. 
+1. One Hot Encoding
+One hot encoding mengubah setiap nilai dalam kolom menjadi kolom baru yang bernilai 0 atau 1.
 Seperti yang telah diketahui data dari fitur sex, smoker dan region berupa kategorikal, maka perlu melakukan konversi data kategorikal ke data numerik agar dapat diolah (encode). 
 2. StandardScaler()
 StandardScaler menghilangkan mean (terpusat pada 0) dan menskalakan ke variansi (deviasi standar = 1), dengan asumsi data terdistribusi normal (gauss) untuk semua fitur.
