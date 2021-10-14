@@ -118,14 +118,9 @@ Adapun Feature importance ranking yang didapatkan.
 
 ## Data Preparation
 Teknik yang digunakan pada tahapan ini, yaitu:
-1. One Hot Encoding
-One hot encoding mengubah setiap nilai dalam kolom menjadi kolom baru yang bernilai 0 atau 1.
-Seperti yang telah diketahui data dari fitur sex, smoker dan region berupa kategorikal, maka perlu melakukan konversi data kategorikal ke data numerik agar dapat diolah (encode). 
-2. StandardScaler()
-StandardScaler menghilangkan mean (terpusat pada 0) dan menskalakan ke variansi (deviasi standar = 1), dengan asumsi data terdistribusi normal (gauss) untuk semua fitur.
-Perlu menskalakan kolom-kolom yang dibutuhkan. Perbedaan skala dapat menyebabkan kendala dengan estimator `euclidean distance`.
-3. Train-Test-Split()
-Membagi dataset menjadi data latih (train) dan data uji (test) merupakan hal yang harus dilakukan sebelum membuat model. Mempertahankan sebagian data yang ada untuk menguji seberapa baik generalisasi model terhadap data baru. 
+1. **One Hot Encoding**. One hot encoding mengubah setiap nilai dalam kolom menjadi kolom baru yang bernilai 0 atau 1. Seperti yang telah diketahui data dari fitur sex, smoker dan region berupa kategorikal, maka perlu melakukan konversi data kategorikal ke data numerik agar dapat diolah (encode). 
+2. **Train-Test-Split()**. Membagi dataset menjadi data latih (train) dan data uji (test) merupakan hal yang harus dilakukan sebelum membuat model. Mempertahankan sebagian data yang ada untuk menguji seberapa baik generalisasi model terhadap data baru. 
+3. **StandardScaler()**. StandardScaler menghilangkan mean (terpusat pada 0) dan menskalakan ke variansi (deviasi standar = 1), dengan asumsi data terdistribusi normal (gauss) untuk semua fitur. Perlu menskalakan kolom-kolom yang dibutuhkan. Perbedaan skala dapat menyebabkan kendala dengan estimator `euclidean distance`.
 
 ## Modeling
 Pada tahap ini, akan dikembangkan model machine learning dengan tiga algoritma. Kemudian akan mengevaluasi performa masing-masing algoritma dan menentukan algoritma mana yang memberikan hasil prediksi terbaik. Selain itu menggunakan fine tuning untuk mencari paramater yang cocok dalam pengembangan model.
