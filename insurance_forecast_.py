@@ -404,7 +404,7 @@ poly_results
 
 """Jika dilihat dari hasil fine tuning maka `degree` yang akan digunakan adalah `degree 3` (derajat 3) karena derajat yang lebih tinggi menyebabkan overfitting pada training set.
 
-Membuat model polynomial regression dengan degree 2.
+Membuat model polynomial regression dengan degree 3.
 """
 
 #memilih degree 3 
