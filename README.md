@@ -109,12 +109,17 @@ Dari hasil visualisasi data univariate, didapatkan kesimpulan:
 Jika dilihat dari hasil visualisasi [Gambar 7](/photo/7.png), maka dapat ditarik sebuah kesimpulan bahwa fitur yang mempengaruhi biaya asuransi adalah `smoker, bmi dan age`. Selain dari fitur yang disebutkan, sangat kecil kemungkinan dalam mempengaruhi biaya asuransi yang harus dibayarkan.
 
 Adapun Feature importance ranking yang didapatkan.
-1. smoker(0.617901)
-2. bmi(0.210965)
-3. age(0.134188)
-4. children(0.019162)
-5. region(0.012888)
-6. sex(0.004896)
+1. smoker_no(0.357565)
+2. smoker_yes(0.260041)
+3. bmi(0.207988)
+4. age(0.133786)
+5. children(0.018739)
+6. region_northwest(0.004879)
+7. region_northeast(0.004673)
+8. region_southeast(0.003600)
+9. region_southwest(0.003035)
+10. sex_male(0.002915)
+11. sex_female(0.002778)
 
 ## Data Preparation
 Teknik yang digunakan pada tahapan ini, yaitu:
@@ -137,10 +142,10 @@ Algoritma yang digunakan, yaitu:
 Hasil dari ketiga model, dapat dilihat dibawah ini:
 
 Model | MSE | RMSE | R^2 
------- | ------ | ------|--------
-0 | Linear Regression |	3.184593e+07 	5643.219749 | 0.799875 
-1 | Polynomial Regression |	1.888866e+07 	4346.108309 | 0.881300
-2 | Random Forest | 1.718343e+07 	4145.289931 | 0.892016
+------ | ------ | ------|------
+Linear Regression | 3.188669e+07 |	5646.830358 |	0.799619
+Polynomial Regression |	2.521740e+07 |	5021.693048 |	0.841530
+Random Forest |	1.878741e+07 |	4334.444316 |	0.881937
 
 Dapat dilihat bahwa model Random Forest menghasilkan nilai R2 tertinggi dan juga menghasilkan nilai MSE maupun nilai RMSE yang rendah. 
 
@@ -148,11 +153,11 @@ Dapat dilihat bahwa model Random Forest menghasilkan nilai R2 tertinggi dan juga
 
 Actual | Predicted Polynomial |	Predicted Random Forest |	Predicted Linear Regression
 ---|---|---|---
-9724.53000 | 11892.0 |	12530.809502 |	11017.230479
-8547.69130 | 10137.0 | 10882.959589 |	9787.530168
-45702.02235 | 49484.0 |	44358.160419 |	37994.782118
-12950.07120 | 13420.0 |	14259.887472 |	16122.778407
-9644.25250 | 14624.0 | 11312.048041 |	6930.759230
+9724.53000 |	11243.217316 |	12521.366079 |	11066.792258
+8547.69130 |	8125.588192 |	10883.798450 |	9363.733352
+45702.02235 |	12367.198499 |	44379.348242 |	38347.065151
+12950.07120 |	9339.605640 |	14263.990393 |	16423.884755
+9644.25250 |	-5567.747931 |	11314.516086 |	6489.828131
 
 Hasil dari komparasi dari beberapa model yang digunakan, terbukti bahwa model Random Forest paling mendekati nilai sebenarnya (nilai aktual) sehingga model Random forestlah yang bisa dikatakan cocok dipakai.
 
