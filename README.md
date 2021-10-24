@@ -96,17 +96,17 @@ Dari hasil visualisasi data univariate, didapatkan kesimpulan:
 
 **Visualisasi Multivariate**
 
-1. [Gambar 1](https://raw.githubusercontent.com/gabrielhozana/gabrielhozana.github.io/main/photo/1.png) fitur-fitur yang terdapat pada dataset yang digunakan terhadap target `charges` tidak memiliki hubungan linier. 
-2. [Gambar 2](https://raw.githubusercontent.com/gabrielhozana/gabrielhozana.github.io/main/photo/2.png) visualisasi terdahap tipe data `object` terhadap target. 
+1. [Gambar 1](https://raw.githubusercontent.com/gabrielhozana/insurance_forecast/main/photo/1.png) fitur-fitur yang terdapat pada dataset yang digunakan terhadap target `charges` tidak memiliki hubungan linier. 
+2. [Gambar 2](https://raw.githubusercontent.com/gabrielhozana/insurance_forecast/main/photo/2.png) visualisasi terdahap tipe data `object` terhadap target. 
    * Faktor pada fitur sex tidak berpengaruh jauh.
    * Faktor perokok berpengaruh terhadap biaya.
    * Region southeast dengan charges yang dibayar tinggi.
-3. [Gambar 3](https://raw.githubusercontent.com/gabrielhozana/gabrielhozana.github.io/main/photo/3.png), [Gambar 4](https://raw.githubusercontent.com/gabrielhozana/gabrielhozana.github.io/main/photo/4.png), [Gambar 5](https://raw.githubusercontent.com/gabrielhozana/gabrielhozana.github.io/main/photo/5.png) dari barplots, biaya `charges` tertinggi akibat merokok masih di Southeast tetapi terendah di Northeast. Orang-orang di Southwest umumnya merokok lebih banyak daripada orang-orang di Northeast tetapi orang-orang di Northeast memiliki biaya `charges` lebih tinggi berdasarkan jenis kelamin `sex` daripada di Southwest dan Northwest secara keseluruhan dan orang-orang dengan memiliki anak cenderung memiliki biaya `charges` medis yang lebih tinggi secara keseluruhan juga.
-4. [Gambar 6](https://raw.githubusercontent.com/gabrielhozana/gabrielhozana.github.io/main/photo/6.png) analisa biaya pengobatan menurut age, bmi dan children menurut faktor smoker. Didapatkan Merokok memiliki dampak tertinggi pada biaya medis, meskipun biayanya meningkat seiring bertambahnya usia, bmi, dan jumlah anak-anak.
+3. [Gambar 3](https://raw.githubusercontent.com/gabrielhozana/insurance_forecast/main/photo/3.png), [Gambar 4](https://raw.githubusercontent.com/gabrielhozana/insurance_forecast/main/photo/4.png), [Gambar 5](https://raw.githubusercontent.com/gabrielhozana/insurance_forecast/main/photo/5.png) dari barplots, biaya `charges` tertinggi akibat merokok masih di Southeast tetapi terendah di Northeast. Orang-orang di Southwest umumnya merokok lebih banyak daripada orang-orang di Northeast tetapi orang-orang di Northeast memiliki biaya `charges` lebih tinggi berdasarkan jenis kelamin `sex` daripada di Southwest dan Northwest secara keseluruhan dan orang-orang dengan memiliki anak cenderung memiliki biaya `charges` medis yang lebih tinggi secara keseluruhan juga.
+4. [Gambar 6](https://raw.githubusercontent.com/gabrielhozana/insurance_forecast/main/photo/6.png) analisa biaya pengobatan menurut age, bmi dan children menurut faktor smoker. Didapatkan Merokok memiliki dampak tertinggi pada biaya medis, meskipun biayanya meningkat seiring bertambahnya usia, bmi, dan jumlah anak-anak.
 
 **C. `Feature importance ranking`** dari Random Forest untuk validasi faktor atau fitur penting terdahap biaya asuransi.
 
-Jika dilihat dari hasil visualisasi [Gambar 7](https://raw.githubusercontent.com/gabrielhozana/gabrielhozana.github.io/main/photo/7.png), maka dapat ditarik sebuah kesimpulan bahwa fitur yang mempengaruhi biaya asuransi adalah `smoker, bmi dan age`. Selain dari fitur yang disebutkan, sangat kecil kemungkinan dalam mempengaruhi biaya asuransi yang harus dibayarkan.
+Jika dilihat dari hasil visualisasi [Gambar 7](https://raw.githubusercontent.com/gabrielhozana/insurance_forecast/main/photo/7.png), maka dapat ditarik sebuah kesimpulan bahwa fitur yang mempengaruhi biaya asuransi adalah `smoker, bmi dan age`. Selain dari fitur yang disebutkan, sangat kecil kemungkinan dalam mempengaruhi biaya asuransi yang harus dibayarkan.
 
 Adapun Feature importance ranking yang didapatkan.
 1. smoker_no(0.357565)
